@@ -1,1 +1,1 @@
-"# kitsu-app" 
+# kitsu-app
