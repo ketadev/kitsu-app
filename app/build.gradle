@@ -63,6 +63,10 @@ dependencies {
     implementation rootProject.ext.commonDependency.hilt_android
     kapt rootProject.ext.commonDependency.hilt_compiler
 
+    implementation rootProject.ext.thirtyPartyDependency.retrofit
+    implementation rootProject.ext.thirtyPartyDependency.gson
+    implementation rootProject.ext.thirtyPartyDependency.okhttp3
+
     testImplementation rootProject.ext.testDependency.junit
     androidTestImplementation rootProject.ext.testDependency.test_ext
     androidTestImplementation rootProject.ext.testDependency.espresso_core

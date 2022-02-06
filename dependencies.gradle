@@ -14,6 +14,11 @@ ext {
     compose_version = '1.0.5'
     activity_compose_version = '1.4.0'
 
+    // Thirty party libraries
+    retrofit_version = '2.9.0'
+    gson_version = '2.8.9'
+    okhttp3_version = '4.9.3'
+
     // Dependency Injection
     hilt_version = '2.38.1'
 
@@ -54,6 +59,12 @@ ext {
 
     uiDependency = [
             material: "com.google.android.material:material:$material_version"
+    ]
+
+    thirtyPartyDependency = [
+            retrofit: "com.squareup.retrofit2:retrofit:$retrofit_version",
+            gson: "com.google.code.gson:gson:$gson_version",
+            okhttp3: "com.squareup.okhttp3:okhttp:$okhttp3_version"
     ]
 
     testDependency = [
