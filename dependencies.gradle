@@ -14,6 +14,9 @@ ext {
     compose_version = '1.0.5'
     activity_compose_version = '1.4.0'
 
+    // Dependency Injection
+    hilt_version = '2.38.1'
+
     // UI
     material_version = '1.5.0'
 
@@ -29,13 +32,16 @@ ext {
 
     classpathDependency = [
             build_gradle: "com.android.tools.build:gradle:$build_gradle_version",
-            gradle_plugin: "org.jetbrains.kotlin:kotlin-gradle-plugin:$gradle_plugin_version"
+            gradle_plugin: "org.jetbrains.kotlin:kotlin-gradle-plugin:$gradle_plugin_version",
+            hilt_gradle_plugin: "com.google.dagger:hilt-android-gradle-plugin:$hilt_version"
     ]
 
     commonDependency = [
             core_ktx: "androidx.core:core-ktx:$core_ktx_version",
             app_compat: "androidx.appcompat:appcompat:$app_compat_version",
-            lifecycle_ktx: "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_ktx_version"
+            lifecycle_ktx: "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_ktx_version",
+            hilt_android: "com.google.dagger:hilt-android:$hilt_version",
+            hilt_compiler: "com.google.dagger:hilt-compiler:$hilt_version"
     ]
 
     androidDependency = [
