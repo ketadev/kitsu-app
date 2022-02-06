@@ -58,7 +58,11 @@ dependencies {
     implementation rootProject.ext.androidDependency.compose_material
     implementation rootProject.ext.androidDependency.compose_ui_tooling_preview
     implementation rootProject.ext.commonDependency.lifecycle_ktx
+    kapt rootProject.ext.commonDependency.lifecycle_compiler
     implementation rootProject.ext.androidDependency.compose_activity
+
+    implementation rootProject.ext.androidDependency.viewModel
+    implementation rootProject.ext.androidDependency.viewModel_compose
 
     implementation rootProject.ext.commonDependency.hilt_android
     kapt rootProject.ext.commonDependency.hilt_compiler

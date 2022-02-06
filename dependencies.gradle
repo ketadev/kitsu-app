@@ -45,6 +45,7 @@ ext {
             core_ktx: "androidx.core:core-ktx:$core_ktx_version",
             app_compat: "androidx.appcompat:appcompat:$app_compat_version",
             lifecycle_ktx: "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_ktx_version",
+            lifecycle_compiler: "androidx.lifecycle:lifecycle-compiler:$lifecycle_ktx_version",
             hilt_android: "com.google.dagger:hilt-android:$hilt_version",
             hilt_compiler: "com.google.dagger:hilt-compiler:$hilt_version"
     ]
@@ -54,7 +55,9 @@ ext {
             compose_material: "androidx.compose.material:material:$compose_version",
             compose_ui_tooling_preview: "androidx.compose.ui:ui-tooling-preview:$compose_version",
             compose_ui_tooling: "androidx.compose.ui:ui-tooling:$compose_version",
-            compose_activity: "androidx.activity:activity-compose:$activity_compose_version"
+            compose_activity: "androidx.activity:activity-compose:$activity_compose_version",
+            viewModel: "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_ktx_version",
+            viewModel_compose: "androidx.lifecycle:lifecycle-viewmodel-compose:$lifecycle_ktx_version"
     ]
 
     uiDependency = [
